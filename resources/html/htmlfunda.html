@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph's Cheat sheet - HTML Fundamentals</title>
+
+    <link rel="stylesheet" href="../css/styles.css">    
+</head>
+
+<!---- INDEX SECTION ---->
+
+    <header>
+        <h1 class="pageTitle">HTML & CSS Basics Cheat Sheet</h1>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="../../index.html">Home</a></li>
+                <li id="currentPage"><a href="#">HTML Fundamentals</a></li>
+                <li><a href="./cssfunda.html">CSS Fundamentals</a></li>
+                <li><a href="./typography.html">Typography</a></li>
+                <li><a href="./tables.html">Tables</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacerTop"></div>
+
+    <body>
+        <div class="introduction">
+            <h2 class="subtitle">What is HTML?</h2>
+            <P class="mainContent"><strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage is the core of a website, it quite literally is the bread and butter of web development, without it you can't make your sandwich.... or in this case your website! This page is not designed as a tutorial, but is designed to be informative on the select topics that have been created! Just below is the index showcasing the few topics covered regarding HTML, feel free to click on them and explore! </P> 
+        </div>
+
+        <div id="index">
+            <table>
+                <tr class="tableTitle">
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th>Index</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#structureSection">Structure</a></td>
+                    <td><a href="#headingsSection"> Headings</a></td>
+                    <td>Classes & ID's</td>
+                    <td>Text Elements</td>
+                    <td>Images & Video's</td>
+                </tr>
+
+                <tr>
+                    <td class="blank"></td>
+                    <td>Creating Lists</td>
+                    <td>Page Titles</td>
+                    <td>Linking to CSS</td>
+                    <td class="blank"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+<!---- STRUCTURE TABLE ---->
+
+        <div id="structureSection">
+            <table>
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th class="structure">Structure</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="5">
+                        When you're starting your HTML document there is a correct way to setup your page! Often IDE's such as Visual Studio Code have shortcuts to help you, but overall your page setup should have the following structure for you to work with!
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <th class="sectionHead">Attribute</th>
+                    <th class="sectionHead" colspan="2">Definition</th>
+                    <th class="sectionHead" colspan="2">Example</th>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;!DOCTYPE html&gt;</td>
+                    <td class="sectionContent" colspan="2">The DOCTYPE attribute is referring to HTML 5, this is the latest build of HTML and is the standard to expect on modern day websites. The &lt;!DOCTYPE html&gt; is telling the browser to expect HTML code for the file being loaded.   </td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/DOCTYPE html.png" alt="HTML DOCTYPE example"> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;head&gt;<br>
+                        &lt;/head&gt;</td>
+                    <td class="sectionContent" colspan="2">The &lt;head&gt; attribute will be the first section on your HTML code, this section will contain all of your metadata. Most metadata won't appear on your finished website as text, but contains important infromation to have your website function. Such as linking our CSS Stylesheet!  </td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/Head.png" alt="HTML head code example"> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;title&gt;<br>
+                        &lt;/title&gt;</td>
+                    <td class="sectionContent" colspan="2">Our title is important, the title sits in our head section and is exactly as it sounds. The title of your page, this title then appears as text in your browser on your tab/window. </td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/title.png" alt="HTML title code example"> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;header&gt;<br>
+                        &lt;/header&gt;</td>
+                    <td class="sectionContent" colspan="2">After our Head section you'll then use a &lt;header&gt;, this is the start of your page content and you'll use the header for the likes of a &lt;h1&gt; title and navigation bar.</td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/header.png" alt="HTML header code example"> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;body&gt;<br>
+                        &lt;/body&gt;</td>
+                    <td class="sectionContent" colspan="2">The main part of our website, just like you as a person, is the body. The &lt;body&gt; of the website contains all your main content, from paragraphs to images and videos!</td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/body.png" alt=""> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;footer&gt;<br>
+                        &lt;/footer&gt;</td>
+                    <td class="sectionContent" colspan="2">Quite often you'll see at the bottom of websites a contact us area, or something similar. This is the footer, and where you'd store all your miscellaneous links and anything else you want to "sign off" your document with! </td>
+                    <td class="sectionCode" colspan="2"> <img src="../images/footer.png" alt=""> </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+
+<!---- HEADINGS TABLE ---->
+
+
+        <div id="headingsSection">
+            <table>
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th class="structure">Headings</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="5">
+                        HTML has a lot of built in features, as you'd expect with the many years of development and improvements behind it! Having titles/subtitles within your page are great for readability, and this is where our headings come into play! (Not to be confused with the header section!)
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <th class="sectionHead">Attribute</th>
+                    <th class="sectionHead" colspan="2">Definition</th>
+                    <th class="sectionHead" colspan="2">Example</th>
+                </tr>
+
+
+
+            </table>
+        </div>
+
+    <div class="spacerBottom"></div>
+
+</body>
+
+<!---- FOOTER SECTION ---->
+
+    <footer>
+
+        <button class="btt">
+            <a href="#index"> ⇪Back to Top⇪</a>
+         </button>
+
+        <ul class="contact">
+            <li><a href="https://twitter.com/Ralph_FrontEnd" target="_blank"> Twitter</a></li>
+            <li><a href="https://www.discordapp.com/users/106902063308390400" target="_blank"> Discord</a></li>
+            <li><a href="https://github.com/Ralph-FrontEnd" target="_blank"> Github</a></li>
+            <li><a href="mailto:ralph.frontend@gmail.com" target="_blank">Email</a></li>
+        </ul>
+
+    </footer>
+</html>

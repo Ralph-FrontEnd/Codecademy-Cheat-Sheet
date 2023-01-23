@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'opensansbold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'opensansreg';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+/* ---<> OVERALL PAGE SETTINGS <>--- */
+
+* {
+    background-color: #355C7D;
+    font-family: 'opensansreg', sans-serif;
+    margin: 0px;
+}
+
+.divider {
+    width: 90%;
+    height: 2px;
+    margin: 40px auto; 
+    background-color: #DDD;
+}
+
+/* ---<> HEADER AND NAVIGATION BAR <>--- */
+header {
+    background-color: #2C74B3;
+    min-height: 100px;
+    width: 99%;
+    box-shadow: -10px 10px rgba(115, 122, 133, 0.45);
+    margin: 15px 60px 15px 15px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow:auto ;
+}
+
+.pageTitle {
+    background-color: transparent;
+    color: #0F3460;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: 'opensansbold';
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #2C74B3;
+}
+
+.navbar {
+    background-color: #2C74B3;
+    margin-right: 50px;
+    margin-top: 17px;
+}
+
+.navbar li {
+    display: inline-flex;
+    background-color: #2C74B3;
+    font-size: 1.25em;
+    border: 1px solid rgba(238, 238, 238, 0.5);
+    border-radius: 8px;
+    padding: 10px 5px;
+    margin: 0px 20px;
+    box-shadow: -5px 3px rgba(115, 122, 133, 0.85);
+    color: #DFF6FF;
+}
+
+.navbar li:hover {
+    background-color: #0F3460;
+    box-shadow: -3px 2px rgba(115, 122, 133, 1);
+}
+
+a {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #DFF6FF;
+}
+
+/* .spacerTop {
+    background-color: #355C7D;
+    width: 100%;
+    margin-top: auto;
+    visibility: hidden;
+} */
+
+/* ---<> CURRENTLY SELECTED BUTTON <>--- */
+
+#currentPage {
+    box-shadow: -3px 2px rgba(115, 122, 133, 1);
+    background-color: #0F3460;
+    padding: 20px 15px;
+}
+
+#currentPage:hover {
+    background-color: #0F3460;
+    box-shadow: -3px 2px rgba(115, 122, 133, 1);
+}
+
+/* ---<> BODY SETUP <>--- */
+
+.introduction {
+    margin-top: 155px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'opensansbold' sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color:#86A3B8;
+    margin: 25px 0px;
+}
+
+.mainContent {
+    margin: 15px 15px;
+    text-align: center;
+    font-size: 22px;
+    color:#DDDDDD;
+    padding-top: 0px;
+    line-height: 35px;
+}
+
+strong {
+    font-family: 'opensansbold';
+}
+
+h3.subtitle {
+    color: #E94560;
+}
+
+.issues li {
+    text-align: center;
+    color: #E94560;
+}
+
+/* ---<> FOOTER CONTACT INFORMATION <>--- */
+
+footer {
+    min-height: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.contact{
+    background-color: rgba(44, 116, 179, 1);
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #DDD;
+}
+
+.contact li {
+    display: inline-flex;
+    background-color: rgba(15, 52, 96, 0.25);
+    padding: 10px;
+    border:1px solid#86A3B8;
+    border-radius: 10px;
+    margin: 10px 80px;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.btt {
+    color:#DDDDDD;
+    background-color: rgba(44, 116, 179, 1);
+    border: 3px solid #DDD;
+    text-transform: uppercase;
+    margin: -65px 25px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 2;
+}
+
+.btt a {
+    font-family:'opensansbold';
+    text-decoration: none;
+}
+
+.btt a:hover {
+    cursor: pointer;
+    background-color:rgba(15, 52, 96, 0.75);
+}
+
+.spacerBottom {
+    background-color: #355C7D;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* ---<> TABLES <>--- */
+
+table {
+ margin: 3px auto;
+ border: 1px solid #DDD;
+ background-color: #2C74B3;
+ padding: 5px 5px;
+}
+
+td, .sectionHead {
+    border: 2px solid #DDD;;
+    background-color: #0F3460;;
+    color:rgba(221, 221, 221,0.80);
+    font-size: 1.25rem;
+    width: 250px;
+    text-align: center;
+}
+
+th {
+    font-family:'opensansbold';
+    color:#DDDDDD;
+    background-color: rgba(44, 116, 179, 1);
+    border: 3px solid #DDD;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    width: 250px;
+    padding: 5px;
+}
+
+.blank {
+    background-color: #2C74B3;
+    border: none;
+    width: 250px;
+}
+
+.code {
+    text-transform: none;
+}
+
+.filler {
+    background-color: #2C74B3;
+    border: none;
+    width: 250px;
+}
+
+.sectionContent {
+    background-color: rgba(223, 246, 255, 0.65);
+    color: #0F3460;
+    font-size: 1rem;
+}
+
+.sectionCode {
+    background-color: #1f1d1d;
+}
+
+.codeContent {
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+    background-color: transparent;
+    color:#DDDDDD;
+    margin: 0px 7px;
+}
+
+#index, #structureSection, #headingsSection {
+    scroll-margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
