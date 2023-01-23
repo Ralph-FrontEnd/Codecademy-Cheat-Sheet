@@ -11,7 +11,7 @@
 /* ---<> OVERALL PAGE SETTINGS <>--- */
 
 * {
-    background-color: #355C7D;
+    background-color: #213f59;
     font-family: 'opensansreg', sans-serif;
     margin: 0px;
 }
@@ -34,7 +34,6 @@ header {
     top: 0px;
     display: flex;
     justify-content: space-evenly;
-    overflow:auto ;
 }
 
 .pageTitle {
@@ -260,8 +259,6 @@ th {
 #index, #structureSection, #headingsSection {
     scroll-margin-top: 150px;
 }
-
-
 
 
 
