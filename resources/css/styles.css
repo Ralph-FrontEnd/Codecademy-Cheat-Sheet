@@ -42,7 +42,7 @@ header {
     margin-left: 50px;
     margin-top: 20px;
     font-size: 3em;
-    font-family: 'opensansbold';
+    font-family: 'opensansbold' sans-serif;
     text-decoration: underline;
 }
 
@@ -260,7 +260,9 @@ th {
     scroll-margin-top: 150px;
 }
 
-
+ul.sectionContent, li.sectionContent {
+    background-color: transparent;
+}
 
 
 
