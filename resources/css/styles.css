@@ -18,7 +18,7 @@
 
 .divider {
     width: 90%;
-    height: 2px;
+    height: 1px;
     margin: 40px auto; 
     background-color: #DDD;
 }
@@ -30,7 +30,7 @@ header {
     width: 99%;
     box-shadow: -10px 10px rgba(115, 122, 133, 0.45);
     margin: 15px 60px 15px 15px;
-    position: fixed;
+    /* position: fixed; */
     top: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -94,10 +94,6 @@ a {
 
 /* ---<> BODY SETUP <>--- */
 
-.introduction {
-    margin-top: 155px;
-}
-
 .subtitle {
     text-align: center;
     font-size: 35px;
@@ -134,7 +130,7 @@ h3.subtitle {
 /* ---<> FOOTER CONTACT INFORMATION <>--- */
 
 footer {
-    min-height: 40px;
+    min-height: fit-content;
     position: fixed;
     width: 100%;
     bottom: 0px;
@@ -149,22 +145,21 @@ footer {
 
 .contact li {
     display: inline-flex;
-    background-color: rgba(15, 52, 96, 0.25);
+    background: transparent;
     padding: 10px;
-    border:1px solid#86A3B8;
     border-radius: 10px;
-    margin: 10px 80px;
+    margin: 10px 35px;
     justify-content: space-between;
-    font-size: 1.25rem;
+    font-size: 0.85rem;
 }
 
 .btt {
     color:#DDDDDD;
     background-color: rgba(44, 116, 179, 1);
-    border: 3px solid #DDD;
+    border: 2px solid #DDD;
     text-transform: uppercase;
-    margin: -65px 25px;
-    font-size: 20px;
+    margin: -45px 25px;
+    font-size: 1.25rem;
     position: fixed;
     z-index: 2;
 }
@@ -189,25 +184,32 @@ footer {
 
 table {
     margin: 3px auto;
-    border: 1px solid #DDD;
+    border: 1px solid rgba(221, 221, 221,0.80);
     background-color: #2C74B3;
-    padding: 5px 5px;
+    padding: 3px 3px;
 }
 
 td, .sectionHead {
-    border: 2px solid #DDD;;
-    background-color: #0F3460;;
+    background-color: #0F3460;
     color:rgba(221, 221, 221,0.80);
     font-size: 1.25rem;
     width: 250px;
     text-align: center;
 }
 
+td {
+    border: 1px solid #0F3460;
+}
+
+.indexBorder {
+    border: 2px solid rgba(221, 221, 221,0.80);
+}
+
 th {
     font-family:'opensansbold';
     color:#DDDDDD;
     background-color: rgba(44, 116, 179, 1);
-    border: 3px solid #DDD;
+    border: 2px solid rgba(221, 221, 221,0.80);
     text-transform: uppercase;
     font-size: 1.3rem;
     width: 250px;
@@ -253,8 +255,9 @@ th {
 #structureSection,
 #headingsSection,
 #classidSection,
-#textElementSection {
-    scroll-margin-top: 150px;
+#textElementsSection,
+#imgandvideoSection {
+    scroll-margin-top: 20px;
 }
 
 ul.sectionContent, li.sectionContent {
