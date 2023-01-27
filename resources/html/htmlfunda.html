@@ -12,15 +12,13 @@
 <!---- INDEX SECTION ---->
 
     <header>
-        <h1 class="pageTitle">HTML & CSS Basics Cheat Sheet</h1>
+        <h1 id="pageTitle">HTML & CSS Basics Cheat Sheet</h1>
 
         <nav>
             <ul class="navbar">
                 <li><a href="../../index.html">Home</a></li>
                 <li id="currentPage"><a href="#">HTML Fundamentals</a></li>
                 <li><a href="./cssfunda.html">CSS Fundamentals</a></li>
-                <li><a href="./typography.html">Typography</a></li>
-                <li><a href="./tables.html">Tables</a></li>
             </ul>
         </nav>
     </header>
@@ -52,9 +50,17 @@
                 </tr>
 
                 <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
                     <td class="blank"></td>
-                    <td class="indexBorder">Creating Lists</td>
-                    <td class="indexBorder">Page Titles</td>
+                    <td class="indexBorder"><a href="#listsSection">Creating Lists</a></td>
+                    <td class="blank"></td>
                     <td class="indexBorder">Linking to CSS</td>
                     <td class="blank"></td>
                 </tr>
@@ -257,6 +263,8 @@
 
         <div class="divider"></div>
 
+<!---- TEXT ELEMENTS TABLE ---->
+
         <div id="textElementsSection">
             <table>
                 <tr>
@@ -324,6 +332,8 @@
 
         <div class="divider"></div>
 
+<!---- IMAGE AND VIDEO TABLE ---->
+
         <div id="imgandvideoSection">
             <table>
                 <tr>
@@ -336,7 +346,74 @@
 
                 <tr>
                     <td class="sectionContent" colspan="5">
-                        At this point you'll likely be using CSS to style your text, but it's always worth mentioning that there are some text elements that will style your text built into HTML. On top of this there are some text elements such as &lt;a&gt; (anchor tags) that will allow you to use links!
+                        A huge part of making your website feel welcoming can be videos and images, this section will cover how you can add images and videos, and some of the modifications you can make too!                        
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <th class="sectionHead">Attribute</th>
+                    <th class="sectionHead" colspan="2">Definition</th>
+                    <th class="sectionHead" colspan="2">Example</th>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent"> &lt;img/&gt;</td>
+                    <td class="sectionContent" colspan="2">The &lt;img&gt; tag doesn't require a closing tag, the reason for the added / allows for the tag to be self-closing!
+                        <br>
+                        <br>
+                        The tag will mainly request 2 pieces of information.
+                        <br>
+                        The src" "
+                        <br>
+                        The alt" "
+                        <br>
+                        <br>
+                        The SRC will be the location of your image, this can be a page URL, or linking to the image within your local files.
+                        <br>
+                        <br>
+                        The ALT stands for alternate, and is text you will want to represent your image. It won't technically be visible, unless the image fails to load or a screen reader is being used.
+                    <td class="sectionCode" colspan="2"><img src="../images/img.png" alt="HTML img code example"></td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent">&lt;video&gt;<br>
+                        &lt;/video&gt;</td>
+                    <td class="sectionContent" colspan="2">Unlike the img tag the &lt;video&gt; does require an opening & closing tag!
+                        <br>
+                        <br>
+                        To make the video tag function, it just needs the link of a video! You are also able to add text in between the &gt;&lt; tags. This text will work the same as the ALT text on image! 
+                    </td>
+                    <td class="codeContent" colspan="2"><img src="../images/video.png" alt="HTML video code example"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="listsSection">
+            <table>
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th class="structure">Creating Lists</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="5">
+                        
                     </td>
                 </tr>
             </table>
@@ -351,7 +428,7 @@
     <footer>
 
         <button class="btt">
-            <a href="#index"> ⇪Back to Top⇪</a>
+            <a href="#pageTitle"> ⇪Back to Top⇪</a>
          </button>
 
          <ul class="contact">

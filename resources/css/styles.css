@@ -30,13 +30,12 @@ header {
     width: 99%;
     box-shadow: -10px 10px rgba(115, 122, 133, 0.45);
     margin: 15px 60px 15px 15px;
-    /* position: fixed; */
     top: 0px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.pageTitle {
+#pageTitle {
     background-color: transparent;
     color: #0F3460;
     margin-left: 50px;
@@ -63,7 +62,7 @@ nav {
     border: 1px solid rgba(238, 238, 238, 0.5);
     border-radius: 8px;
     padding: 10px 5px;
-    margin: 0px 20px;
+    margin: 0px 60px;
     box-shadow: -5px 3px rgba(115, 122, 133, 0.85);
     color: #DFF6FF;
 }
@@ -130,7 +129,7 @@ h3.subtitle {
 /* ---<> FOOTER CONTACT INFORMATION <>--- */
 
 footer {
-    min-height: fit-content;
+    /* min-height: fit-content; */
     position: fixed;
     width: 100%;
     bottom: 0px;
@@ -148,7 +147,7 @@ footer {
     background: transparent;
     padding: 10px;
     border-radius: 10px;
-    margin: 10px 35px;
+    margin: 3px 35px;
     justify-content: space-between;
     font-size: 0.85rem;
 }
@@ -251,12 +250,12 @@ th {
     margin: 0px 7px;
 }
 
-#index,
 #structureSection,
 #headingsSection,
 #classidSection,
 #textElementsSection,
-#imgandvideoSection {
+#imgandvideoSection,
+#listsSection {
     scroll-margin-top: 20px;
 }
 
