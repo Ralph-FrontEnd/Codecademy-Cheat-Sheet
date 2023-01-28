@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/styles.css">    
 </head>
 
+<!---- CSS INDEX SECTION ---->
+
     <header>
         <h1 id="pageTitle">HTML & CSS Basics Cheat Sheet</h1>
 
@@ -22,10 +24,167 @@
     </header>
 
     <body>
+        <div class="introduction">
+            <h2 class="subtitle">What is CSS?</h2>
+            <P class="mainContent"><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets is one of the main ways HTML gets its design. There is two ways of implementing CSS into your HTML, the first way is inline styling which directly puts your CSS code in your HTML file, but, this can get pretty messy! The more efficient and tidier way is via the CSS ruleset, which takes place within its own file!
+            <br>
+            Below is some of the basics, so feel free to scroll through or click the links if you're wanting to find something specific!</P> 
+        </div>
+
+        <div id="cssIndex">
+            <table>
+                <tr class="tableTitle">
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th>Index</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td class="indexBorder"><a href="#selectorsSection">Selectors</a></td>
+                    <td class="indexBorder"><a href="#paddingSection">Padding</a></td>
+                    <td class="indexBorder"><a href="#marginSection">Margins</a></td>
+                    <td class="indexBorder"><a href="#pseudoSection">Pseudo Class</a></td>
+                    <td class="indexBorder"><a href="#descspecSection">Descendants & Specificty</a></td>
+                </tr>
+
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <td class="blank"></td>
+                    <td class="indexBorder"><a href="#fontfamilySection">Font Families</a></td>
+                    <td class="blank"></td>
+                    <td class="indexBorder"><a href="#colorSection">Colors</a></td>
+                    <td class="blank"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+<!---- SELECTORS SECTION ---->
+
+        <div id="selectorsSection">
+            <table>
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th class="structure">Selectors</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="5">
+                        There are many different ways for you to cross over documents and take the styling from your stylesheet, and linking it up with your HTML. And to do this we use a system called selectors, there are many different selectors and below we'll show you what they look like!  
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <th class="sectionHead" colspan="2">Selectors</th>
+                    <th class="sectionHead" colspan="2">HTML Showcase</th>
+                    <th class="sectionHead" colspan="2">CSS Linking</th>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">So our first selector that we are going to refer to is the type selector. The type selector takes the HTML element directly, take a look at the examples on the right on how that works!   </td>
+                    <td class="sectionCode" colspan="2"><img src="../images/Element Type.png" alt="HTML selector type example"> </td>
+                    <td class="sectionCode" colspan="2"><img src="../images/p selector.png" alt="CSS selector type styling"> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Our next selector we'll look at is the Global selector, this selector will effect everything on your page unless overridden by a more specific selector, but we'll cover that in a later section</td>
+                    <td class="sectionCode" colspan="2"></td>
+                    <td class="sectionCode" colspan="2"><img src="../images/global css.png" alt=""> </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Say we have 2 paragraphs, but we only want to style one of those paragraphs. We've already set our paragraphs in the example above to have green text and a dark gray background. I don't want to change the first paragraph from this only the second one.
+                        <br>
+                        <br>
+                        We can do this by using our classes and ID's that we implemented to the opening tags on the paragraphs, see the examples!
+                    </td>
+                    <td class="sectionCode" colspan="2"><img src="../images/class and id selector.png" alt="HTML class & ID selector"></td>
+                    <td class="sectionCode" colspan="2"><img src="../images/css id and class.png" alt="CSS selectors being used"> </td>                    
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="divider"></div>        
+
+<!---- PADDING SECTION ---->
+
+        <div id="paddingSection">
+
+        </div>
+
+        <div class="divider"></div>        
+
+<!---- MARGIN SECTION ---->
+
+        <div id="marginSection">
+
+        </div>
+
+        <div class="divider"></div>        
+
+<!---- PSEUDO CLASS SECTION ---->
+
+        <div id="pseudoSection">
+
+        </div>
+
+        <div class="divider"></div>        
+
+<!---- DESCENDANT'S & SPECIFICITY SECTION ---->
+
+        <div id="descspecSection">
+
+        </div>
+
+        <div class="divider"></div>
+
+<!---- FONT FAMILIES SECTION ---->
+
+        <div id="fontfamilySection">
+
+        </div>
+
+        <div class="divider"></div> 
+
+<!---- COLORS SECTION ---->
+
+        <div id="colorSection">
+
+        </div>
+
+        <div class="divider"></div> 
 
     </body>
 
     <footer>
+        <button class="btt">
+            <a href="#pageTitle"> ⇪Back to Top⇪</a>
+         </button>
+
         <ul class="contact">
             <li><a href="https://twitter.com/Ralph_FrontEnd" target="_blank"> Twitter | Ralph_FrontEnd </a></li>
             <li><a href="https://www.discordapp.com/users/106902063308390400" target="_blank"> Discord | Ralph#3895</a></li>
