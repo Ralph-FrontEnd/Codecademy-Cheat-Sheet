@@ -255,7 +255,8 @@ th {
 #classidSection,
 #textElementsSection,
 #imgandvideoSection,
-#listsSection {
+#listsSection,
+#csslinkSection {
     scroll-margin-top: 20px;
 }
 
