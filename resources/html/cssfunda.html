@@ -46,7 +46,7 @@
                     <td class="indexBorder"><a href="#paddingSection">Padding</a></td>
                     <td class="indexBorder"><a href="#marginSection">Margins</a></td>
                     <td class="indexBorder"><a href="#pseudoSection">Pseudo Class</a></td>
-                    <td class="indexBorder"><a href="#descspecSection">Descendants & Specificty</a></td>
+                    <td class="indexBorder"><a href="#hierarchySection">CSS hierarchy</a></td>
                 </tr>
 
                 <tr>
@@ -325,10 +325,74 @@
 
         <div class="divider"></div>        
 
-<!---- DESCENDANT'S & SPECIFICITY SECTION ---->
+<!---- HIERARCHY SECTION ---->
 
-        <div id="descspecSection">
+        <div id="hierarchySection">
+            <table>
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <th class="structure">CSS Selector Hierarchy</th>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                </tr>
 
+                <tr>
+                    <td class="sectionContent" colspan="5">CSS has a built in hierarchy, the way we select attributes will have a huge impact on how it effects the design styling on our HTML. This section will cover some of the basic hierarchy seen within CSS, and will allow you to see that the most powerful selectors will overwrite the lesser powerful ones. </td>    
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <th class="sectionContent">Most Power</th>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+                <tr>
+                    <th class="sectionHead" colspan="2">Selector</th>
+                    <th class="sectionHead" colspan="3">Description</th>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Specificty</td>
+                    <td class="sectionContent" colspan="3">The more specific you are in regards to what you're targetting, will always have the most power. This is because you're taking either the class or ID and then selecting a child within that parents class.<br>
+                        For example:
+                        <br>.myClass li <br>
+                        The above is using a class which would be on the UL/OL and the list item, making it more specific to that exact section.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">ID's</td>
+                    <td class="sectionContent" colspan="3">The ID selector is the most powerful standalone selector, in an ideal world you'd only use a specific ID once within your HTML code. </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Classes</td>
+                    <td class="sectionContent" colspan="3">Classes are slightly weaker than ID's, but still have a good amount of power over the below items. The great positive side of classes is they're designed to be used multiple times throughout our HTML, ideal for repetition. </td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Attributes</td>
+                    <td class="sectionContent" colspan="3">Our generic page attributes such as &lt;p&gt; or &lt;h1&gt; are fairly low within the hierarchy, but are still useful to use if you're styling them as a group across your pages.</td>
+                </tr>
+
+                <tr>
+                    <td class="sectionContent" colspan="2">Gloabl/Universal (*)</td>
+                    <td class="sectionContent" colspan="3">The asertisk * acts as a global modifier, and is great for setting the main font you'll use or overall font size etc. Things that'll be default across your page and appear a LOT!</td>
+                </tr>
+
+                <tr>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                    <th class="sectionContent">Least Power</th>
+                    <td class="filler"></td>
+                    <td class="filler"></td>
+                </tr>
+
+            </table>
         </div>
 
         <div class="divider"></div>
